@@ -17,6 +17,7 @@ body {
   padding: 20px;
   background-color: #ffffff; /* White background */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  display: flex; /* Use flexbox to position sections side by side */
 }
 
 /* Style the heading */
@@ -29,10 +30,14 @@ h1 {
 
 /* Style the bio and course sections */
 .bio, .course {
+  flex: 1; /* Equal width for both sections */
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
   color: #333; /* Dark gray text color */
+  display: flex; /* Use flexbox to position content inside sections */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
 }
 
 /* Style the heading inside sections */
@@ -40,6 +45,7 @@ h2 {
   color: #444; /* Slightly darker gray text color */
   font-size: 24px;
   margin-bottom: 10px;
+  text-align: center; /* Center-align the text */
 }
 
 /* Style paragraphs */
@@ -47,14 +53,15 @@ p {
   color: #666; /* Medium gray text color */
   font-size: 16px;
   line-height: 1.5;
+  text-align: center; /* Center-align the text */
 }
 
 /* Add a background image to the bio section */
 .bio {
   background-image: url('iit.jpg');
   background-size: cover;
-  background-position: center;
-  text-align: center; /* Center-align the text */
+  background-position: left; /* Move background to the left side */
+  text-align: right; /* Right-align the text */
   padding: 50px; /* Increase padding for better spacing */
 }
 
@@ -62,14 +69,15 @@ p {
 .course {
   background-image: url('html_css.jpg');
   background-size: cover;
-  background-position: center;
-  text-align: center; /* Center-align the text */
+  background-position: right; /* Move background to the right side */
+  text-align: left; /* Left-align the text */
   padding: 50px; /* Increase padding for better spacing */
 }
 
-/* Add a semi-transparent background color to text for better contrast */
+/* Make text on the top background white */
 .bio h2, .course h2, .bio p, .course p {
   background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
   padding: 10px;
   border-radius: 5px;
+  color: #fff; /* White text color */
 }

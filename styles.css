@@ -1,71 +1,93 @@
-/* Reset some default styles */
+/* Reset some default styles for consistency */
 body, h1, h2, p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Apply a background color to the body */
+/* Set a background color for the entire page */
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
 }
 
 /* Style the main container */
 .maincontainer {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* Add rounded corners */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the main heading */
+/* Style the page title */
 h1 {
-    font-size: 36px; /* Larger font size */
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center; /* Center align */
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Style the section headings */
-h2 {
-    font-size: 28px; /* Larger font size */
-    color: #555;
-    margin-top: 20px;
-}
-
-/* Style the paragraphs */
-p {
-    font-size: 18px; /* Slightly larger font size */
-    color: #777;
-    line-height: 1.6;
+/* Style the sections */
+section {
+  margin-bottom: 40px;
 }
 
 /* Style the bio section */
 .bio {
-    border-bottom: 2px solid #ddd; /* Thicker border */
-    padding-bottom: 40px; /* More padding */
-    text-align: center; /* Center align */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 /* Style the course section */
 .course {
-    margin-top: 60px; /* More top margin */
-    text-align: center; /* Center align */
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-/* Add a decorative background image to the main container */
-.maincontainer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('your-image-url.jpg');
-    background-size: cover;
-    background-blur: 10px; /* Apply a subtle blur to the background image */
-    opacity: 0.3; /* Reduce opacity for a subtle effect */
-    z-index: -1;
+/* Style the headings in sections */
+h2 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Style the paragraphs */
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Add background images to the sections */
+.bio {
+  background-image: url('ITMD541_Assignments/iit.jpg');
+  background-size: cover;
+}
+
+.course {
+  background-image: url('ITMD541_Assignments/html_css.jpg');
+  background-size: cover;
+}
+
+/* Center align text within sections */
+.bio, .course {
+  text-align: center;
+}
+
+/* Style links */
+a {
+  color: #0078d4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #004b8e;
+}
+
+/* Add some padding to the top and bottom of the entire page */
+body {
+  padding: 20px 0;
 }

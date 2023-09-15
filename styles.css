@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
   color: #333;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 0;
+  padding: 0;
 }
 
 .maincontainer {
@@ -34,24 +34,24 @@ section {
   display: flex;
   flex-direction: row;
   width: 100%;
-  align-items: center; /* Center vertically */
+  align-items: center;
 }
 
-.bio:before, .course:before {
+.bio-before, .course-before {
   content: "";
   display: block;
   width: 200px;
   height: 200px;
   margin-right: 20px;
-  flex-shrink: 0; /* Prevent images from shrinking */
+  flex-shrink: 0;
 }
 
-.bio:before {
+.bio-before {
   background: url("iit.jpg") no-repeat center;
   background-size: cover;
 }
 
-.course:before {
+.course-before {
   background: url("html_css.jpg") no-repeat center;
   background-size: cover;
 }

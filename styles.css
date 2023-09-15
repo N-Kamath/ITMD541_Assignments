@@ -29,10 +29,10 @@ h1 {
 
 /* Style the bio and course sections */
 .bio, .course {
-  background-color: #f9f9f9; /* Light gray background */
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
+  color: #333; /* Dark gray text color */
 }
 
 /* Style the heading inside sections */
@@ -54,7 +54,8 @@ p {
   background-image: url('iit.jpg');
   background-size: cover;
   background-position: center;
-  color: #fff; /* White text color for better contrast */
+  text-align: center; /* Center-align the text */
+  padding: 50px; /* Increase padding for better spacing */
 }
 
 /* Add a background image to the course section */
@@ -62,5 +63,13 @@ p {
   background-image: url('html_css.jpg');
   background-size: cover;
   background-position: center;
-  color: #fff; /* White text color for better contrast */
+  text-align: center; /* Center-align the text */
+  padding: 50px; /* Increase padding for better spacing */
+}
+
+/* Add a semi-transparent background color to text for better contrast */
+.bio h2, .course h2, .bio p, .course p {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 10px;
+  border-radius: 5px;
 }

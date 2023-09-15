@@ -62,12 +62,12 @@ p {
 
 /* Add background images to the sections */
 .bio {
-  background-image: url('https://github.com/N-Kamath/ITMD541_Assignments/blob/main/iit.jpg');
+  background-image: url('iit.jpg');
   background-size: cover;
 }
 
 .course {
-  background-image: url('https://github.com/N-Kamath/ITMD541_Assignments/blob/main/html_css.jpg');
+  background-image: url('html_css.jpg');
   background-size: cover;
 }
 

@@ -1,37 +1,26 @@
 body {
     font-family: 'Arial', sans-serif;
     color: black;
-    padding: 2em;
-}
-
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    display: block;
-    background: rgba(255,255,255,0.6);
     background: url('iit.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding: 2em;
 }
 
 section {
-    margin: 2em 0;
+    margin: 2em;
     position: relative;
 }
 
-h1, h2 {
+h1 span,
+h2 span {
     color: darkblue;
     font-weight: bold;
-    background-color: #f0f8ff;
+    background-color: rgba(240, 248, 255, 0.7);
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 p {
@@ -40,9 +29,7 @@ p {
 }
 
 .content {
-    padding: 0 20px;
-    background-color: white;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 1em;
 }

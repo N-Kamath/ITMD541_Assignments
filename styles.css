@@ -1,37 +1,39 @@
-body { 
-    font-family: Arial, sans-serif; 
-    background-color: floralwhite; 
-    color: black; 
-    padding: 2em; 
+body {
+    font-family: Arial, sans-serif;
+    background-color: floralwhite;
+    color: black;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
-h1, h2 { 
-    color: darkblue; 
+h1, h2 {
+    color: darkblue;
 }
 
-p { 
-    text-align: justify; 
-    line-height: 1.6; 
-    color: midnightblue; 
+p {
+    text-align: justify;
+    line-height: 1.6;
+    color: midnightblue;
 }
 
-.my-picture, .course-picture { 
-    display: block;
-    max-width: 500px;
+.my-picture, .course-picture {
+    max-width: 100%;
     height: auto;
     margin: 15px 0;
 }
 
-.my-picture { 
-    float: left; 
-    margin-right: 15px; 
+.my-picture {
     border: 5px solid darkblue;
     border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
 }
 
-.course-picture { 
-    float: right; 
-    margin-left: 15px; 
+.course-picture {
     border: 5px solid darkblue;
     border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
 }

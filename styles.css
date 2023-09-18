@@ -23,6 +23,12 @@ h2 span {
     border-radius: 5px;
 }
 
+/* Add styles for the headings "About Me" and "Course Description" */
+h1 span,
+h2 span {
+    background-color: white; /* Set background color to white */
+}
+
 p {
     text-align: justify;
     line-height: 1.6;
@@ -30,6 +36,6 @@ p {
 
 .content {
     padding: 20px;
-    background-color: white; /* Set background color to white */
+    background-color: white;
     border-radius: 5px;
 }

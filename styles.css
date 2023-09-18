@@ -9,24 +9,33 @@ body {
     padding: 2em;
 }
 
+.bio-container {
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+#profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
 section {
     margin: 2em;
-    position: relative;
 }
 
 h1 span,
 h2 span {
+    background-color: white;
     color: darkblue;
     font-weight: bold;
-    background-color: rgba(240, 248, 255, 0.7);
     padding: 10px;
     border-radius: 5px;
-}
-
-/* Add styles for the headings "About Me" and "Course Description" */
-h1 span,
-h2 span {
-    background-color: white; /* Set background color to white */
 }
 
 p {

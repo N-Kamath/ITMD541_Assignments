@@ -10,9 +10,9 @@ body {
 }
 
 .bio-container {
-    border: 1px solid transparent; /* Make the border transparent */
+    border: 1px solid transparent;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0); /* Make the background transparent */
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
     width: 80%;
     margin: auto;
@@ -31,7 +31,7 @@ section {
 
 h1 span,
 h2 span {
-    background-color: rgba(0, 0, 0, 0); /* Make the background transparent */
+    background-color: rgba(0, 0, 0, 0);
     color: darkblue;
     font-weight: bold;
     padding: 10px;
@@ -45,7 +45,7 @@ p {
 
 .content {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0); /* Make the background transparent */
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
     color: white;
 }

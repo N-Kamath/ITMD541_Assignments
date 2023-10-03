@@ -8,13 +8,11 @@
 }
 
 #flex-section1 ul li {
-  flex: 1;
-  text-align: center;
 }
 
 #flex-section1 a.btn {
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 8px 10px;
   background-color: #d31111;
   color: #fff;
   border-radius: 5px;

@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding: 0 10px;
-  margin: 0 20px;
+  padding: 0 8px;
+  margin: 0 18px;
 }
 
 #flex-section1 ul li {

@@ -65,17 +65,7 @@
   border-radius: 4px;
   font-size: 0.75rem;
   margin: 2px 5px;
-  order: 1;
 }
-
-#flex-section3 .tags li.sky {
-  order: 2;
-}
-
-#flex-section3 .tags li.card {
-  order: 3;
-}
-
 
 /* end Flexbox Part 3 */
 

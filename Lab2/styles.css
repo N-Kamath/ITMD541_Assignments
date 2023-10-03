@@ -12,6 +12,12 @@
   text-align: center;
 }
 
+#flex-section1 a.btn{
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #d31111;
+  color: #fff;
+  border-radius: 5px;
 /* end Flexbox Part 1 */
 
 /* Flexbox Part 2 */
@@ -150,7 +156,7 @@
 #transition-section .box a:hover {
   background-color: #cc0000;
   color: #fff;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 3s, color 3s;
 }
 
 /* end Transition Part */

@@ -150,7 +150,7 @@
 #transition-section .box a:hover {
   background-color: #cc0000;
   color: #fff;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* end Transition Part */

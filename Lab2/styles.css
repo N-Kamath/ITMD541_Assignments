@@ -65,15 +65,15 @@
   border-radius: 4px;
   font-size: 0.75rem;
   margin: 2px 5px;
-  order: 1; /* Default order for other tags */
+  order: 1;
 }
 
 #flex-section3 .tags li.sky {
-  order: 2; /* Display "sky" tag below other tags */
+  order: 2;
 }
 
 #flex-section3 .tags li.card {
-  order: 3; /* Display "card" tag below other tags */
+  order: 3;
 }
 
 

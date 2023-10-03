@@ -99,7 +99,7 @@
 
 #grid-section2 .gridboxred {
   grid-column: 1 / 3;
-  grid-row: 2 / 4;
+  grid-row: 2 / 3;
   z-index: 1;
 }
 

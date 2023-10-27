@@ -38,4 +38,4 @@ function calculateTip(){
     }
 }
 
-calculateTip();
+calculateTip(); 

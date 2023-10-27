@@ -14,4 +14,4 @@ function calculate() {
 }
 
 form.addEventListener('input', calculate);
-form.addEventListener('change', calculate);
+form.addEventListener('change', calculate); 

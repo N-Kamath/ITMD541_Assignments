@@ -71,6 +71,7 @@ h4.lab-title {
     background-color: #F5F5DC;
     color: #333;
     padding: 15px 20px;
+    margin: -20px -20px 20px -20px
     border-radius: 10px 10px 0 0;
     font-size: 10px;
     text-transform: uppercase;

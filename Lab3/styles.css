@@ -74,6 +74,7 @@ h4.lab-title {
     border-radius: 10px 10px 0 0;
     font-size: 16px;
     text-transform: uppercase;
+    position: relative;
     z-index: 1;
     top: 0;
     left: 0;

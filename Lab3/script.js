@@ -28,11 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
         updateTipValues();
     });
 
-    // Add an additional input event listener to display a message for invalid input
     billTotalInput.addEventListener('input', function () {
         if (isNaN(parseFloat(billTotalInput.value)) || parseFloat(billTotalInput.value) < 0) {
-            // Display a message or take some other action to indicate invalid input
-            alert('Please enter a valid positive number for the bill total.');
+            alert('Please enter a valid input for the bill total.');
         }
         updateTipValues();
     });

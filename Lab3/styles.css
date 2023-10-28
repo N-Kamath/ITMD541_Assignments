@@ -14,12 +14,13 @@ body {
 }
 
 .container {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #f8f8f8;
+    border: 2px solid #333;
+    border-radius: 10px;
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -36,10 +37,10 @@ label {
 
 input {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 input[disabled] {
@@ -49,22 +50,22 @@ input[disabled] {
 h1 {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     margin: -20px -20px 20px -20px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 @media (max-width: 600px) {
     .container {
         max-width: 90%;
     }
-    
+
     h1 {
         font-size: 24px;
     }
-    
+
     input {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -72,12 +73,12 @@ h1 {
     .container {
         max-width: 70%;
     }
-    
+
     h1 {
         font-size: 28px;
     }
-    
+
     input {
-        font-size: 16px;
+        font-size: 18px;
     }
 }

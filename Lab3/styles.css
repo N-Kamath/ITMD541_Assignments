@@ -33,7 +33,7 @@ body {
 .form-group {
     margin-bottom: 15px;
     width: 100%;
-    flex: 1; /* Add this line to distribute vertical space evenly */
+    flex: 1;
 }
 
 label {
@@ -56,7 +56,7 @@ h1 {
     background-color: #333;
     color: #fff;
     padding: 15px 20px;
-    margin: 0;
+    margin-bottom: 15px;
     border-radius: 10px 10px 0 0;
     font-size: 32px;
     text-transform: uppercase;
@@ -68,7 +68,7 @@ h4.lab-title {
     background-color: #F5F5DC;
     color: #333;
     padding: 5px 10px;
-    margin: 0;
+    margin-bottom: 15px;
     font-size: 16px;
     text-transform: uppercase;
     position: relative;

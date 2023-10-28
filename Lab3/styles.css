@@ -70,9 +70,10 @@ h1 {
 h4.lab-title {
     background-color: #333;
     color: #fff;
-    padding: 15px 20px; 
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px;
     border-radius: 10px 10px 0 0;
-    font-size: 16px;
+    font-size: 32px;
     text-transform: uppercase;
     z-index: 1;
     top: 0;

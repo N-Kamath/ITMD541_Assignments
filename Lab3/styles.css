@@ -34,22 +34,16 @@ label {
     display: block;
 }
 
-input[type="range"] {
+input {
     width: 100%;
-    height: 20px;
-    margin: 0;
-    -webkit-appearance: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px; 
-    height: 20px;
-    background: #007BFF;
-    border: 2px solid #007BFF;
-    border-radius: 50%;
-    cursor: pointer;
+input[disabled] {
+    background-color: #f0f0f0;
 }
 
 h1 {

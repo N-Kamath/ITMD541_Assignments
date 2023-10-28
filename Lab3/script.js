@@ -1,41 +1,25 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const billTotalInput = document.getElementById('billTotal');
+    const tipPercentageInput = document.getElementById('tipPercentage');
+    const tipAmountInput = document.getElementById('tipAmount');
+    const tipRangeInput = document.getElementById('tipRange');
+    const totalWithTipInput = document.getElementById('totalWithTip');
+    const tipCalculatorForm = document.getElementById('tipCalculator');
 
-const sliders = document.querySelectorAll("input[type='range']");
-const billInput = document.getElementById("bill");
-sliders.forEach(function(slider){
+    tipCalculatorForm.addEventListener('input', function () {
+        const billTotal = parseFloat(billTotalInput.value);
+        const tipPercentage = parseFloat(tipRangeInput.value);
+        const tipAmount = (billTotal * tipPercentage) / 100;
+        const totalWithTip = billTotal + tipAmount;
 
-    slider.addEventListener("input",calculateTip);
+        if (!isNaN(billTotal)) {
+            tipPercentageInput.value = tipPercentage.toFixed(2);
+            tipAmountInput.value = tipAmount.toFixed(2);
+            totalWithTipInput.value = totalWithTip.toFixed(2);
+        } else {
+            tipPercentageInput.value = '';
+            tipAmountInput.value = '';
+            totalWithTipInput.value = '';
+        }
+    });
 });
-
-billInput.addEventListener("change",calculateTip);
-
-
-function calculateTip(){
-    var bill1 = parseFloat(billInput.value);
-    let tipPercent = document.getElementById("tip").value;
-   
-
-    billInput.value = bill1.toFixed(2);
-  
-    if ( isNaN(billInput.value) ) {
-        
-        alert('Enter valid Input');
-        billInput.value=0;
-       
-        
-       
-    } else {
-       
-    let totalTip = parseFloat((bill1 * (tipPercent/100)).toFixed(2));
-    let total = parseFloat((bill1 + totalTip).toFixed(2));
-
-
-
-    document.getElementById("tip-amount").textContent = `${totalTip}$`;
-    document.getElementById("total-amount").textContent = `${total}$`;
-    
-    document.getElementById("tip-percent").textContent = `${tipPercent}%`;
-  
-    }
-}
-
-calculateTip();

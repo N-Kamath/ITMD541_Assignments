@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    background-color: #f7f7f7;
+    background-color: #F5F5DC;
     border: 2px solid #6c6c6c;
     border-radius: 10px;
     padding: 20px;
@@ -70,11 +70,11 @@ h1 {
 h4.lab-title {
     background-color: #333;
     color: #fff;
-    padding: 15px 20px;
-    margin: -20px -20px 20px -20px;
-    border-radius: 10px 10px 0 0;
-    font-size: 32px;
+    padding: 7px 10px; 
+    border-radius: 5px 5px 0 0;
+    font-size: 16px;
     text-transform: uppercase;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;

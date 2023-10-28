@@ -1,11 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Centered Container */
 .centered-container {
     display: flex;
     justify-content: center;
@@ -13,10 +20,11 @@ body {
     height: 100vh;
 }
 
+/* Container */
 .container {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #f7f7f7; /* Slightly off-white */
+    border: 2px solid #6c6c6c; /* Dark gray border */
+    border-radius: 10px;
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
@@ -26,49 +34,59 @@ body {
     align-items: center;
 }
 
+/* Form */
 form {
     text-align: left;
     width: 100%;
 }
 
+/* Form Group */
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Increased spacing */
     width: 100%;
 }
 
+/* Label */
 label {
     display: block;
     width: 100%;
-    text-align: center;
+    text-align: left; /* Left-aligned text */
+    color: #333; /* Dark gray text color */
 }
 
+/* Input */
 input {
     width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 14px;
+    padding: 10px; /* Increased padding */
+    border: 2px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increased font size */
+    color: #333; /* Dark gray text color */
 }
 
+/* H1 (Heading) */
 h1 {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 15px 20px; /* Increased padding */
     margin: -20px -20px 20px -20px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0; /* More rounded corners */
+    font-size: 32px; /* Larger font size */
+    text-transform: uppercase; /* Uppercase text */
 }
 
+/* Media Queries */
 @media (max-width: 600px) {
     .container {
         max-width: 90%;
     }
     
     h1 {
-        font-size: 24px;
+        font-size: 28px; /* Adjusted font size for smaller screens */
     }
     
     input {
-        font-size: 12px;
+        font-size: 14px; /* Adjusted font size for smaller screens */
     }
 }
 
@@ -78,10 +96,10 @@ h1 {
     }
     
     h1 {
-        font-size: 28px;
+        font-size: 36px; /* Adjusted font size for medium-sized screens */
     }
     
     input {
-        font-size: 16px;
+        font-size: 18px; /* Adjusted font size for medium-sized screens */
     }
 }

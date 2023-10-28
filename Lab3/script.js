@@ -6,14 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalWithTipInput = document.getElementById('totalWithTip');
     const tipCalculatorForm = document.getElementById('tipCalculator');
 
-    tipCalculatorForm.addEventListener('input', function () {
+    function updateTipValues() {
         const billTotal = parseFloat(billTotalInput.value);
         const tipPercentage = parseFloat(tipRangeInput.value);
-        const tipAmount = (billTotal * tipPercentage) / 100;
-        const totalWithTip = billTotal + tipAmount;
 
-        if (!isNaN(billTotal)) {
-            tipPercentageInput.value = tipPercentage.toFixed(2);
+        if (!isNaN(billTotal) && billTotal >= 0) {
+            const tipAmount = (billTotal * tipPercentage) / 100;
+            const totalWithTip = billTotal + tipAmount;
+
+            tipPercentageInput.value = tipPercentage.toFixed(0);
             tipAmountInput.value = tipAmount.toFixed(2);
             totalWithTipInput.value = totalWithTip.toFixed(2);
         } else {
@@ -21,5 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
             tipAmountInput.value = '';
             totalWithTipInput.value = '';
         }
+    }
+
+    tipCalculatorForm.addEventListener('input', function () {
+        updateTipValues();
+    });
+
+    // Add an additional input event listener to display a message for invalid input
+    billTotalInput.addEventListener('input', function () {
+        if (isNaN(parseFloat(billTotalInput.value)) || parseFloat(billTotalInput.value) < 0) {
+            // Display a message or take some other action to indicate invalid input
+            alert('Please enter a valid positive number for the bill total.');
+        }
+        updateTipValues();
     });
 });

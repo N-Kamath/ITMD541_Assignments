@@ -1,17 +1,25 @@
-var form = document.getElementById('calculator');
+document.addEventListener('DOMContentLoaded', function () {
+    const billTotalInput = document.getElementById('billTotal');
+    const tipPercentageInput = document.getElementById('tipPercentage');
+    const tipAmountInput = document.getElementById('tipAmount');
+    const tipRangeInput = document.getElementById('tipRange');
+    const totalWithTipInput = document.getElementById('totalWithTip');
+    const tipCalculatorForm = document.getElementById('tipCalculator');
 
-function calculate() {
-    var billTotal = parseFloat(form['bill-total'].value);
-    var tipPercentage = form['tip-slider'].value;
-    if (isNaN(billTotal)) {
-        alert('Please enter a valid number for the Bill Total');
-        return;
-    }
-    var tipAmount = billTotal * (tipPercentage / 100);
-    var totalBill = billTotal + tipAmount;
-    form['tip-amount'].value = tipAmount.toFixed(2);
-    form['total-bill'].value = totalBill.toFixed(2);
-}
+    tipCalculatorForm.addEventListener('input', function () {
+        const billTotal = parseFloat(billTotalInput.value);
+        const tipPercentage = parseFloat(tipRangeInput.value);
+        const tipAmount = (billTotal * tipPercentage) / 100;
+        const totalWithTip = billTotal + tipAmount;
 
-form.addEventListener('input', calculate);
-form.addEventListener('change', calculate); 
+        if (!isNaN(billTotal)) {
+            tipPercentageInput.value = tipPercentage.toFixed(2);
+            tipAmountInput.value = tipAmount.toFixed(2);
+            totalWithTipInput.value = totalWithTip.toFixed(2);
+        } else {
+            tipPercentageInput.value = '';
+            tipAmountInput.value = '';
+            totalWithTipInput.value = '';
+        }
+    });
+});

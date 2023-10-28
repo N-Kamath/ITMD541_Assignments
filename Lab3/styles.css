@@ -60,25 +60,28 @@ h1 {
     background-color: #333;
     color: #fff;
     padding: 15px 20px;
-    margin: -20px -20px 20px -20px;
+    margin: 0;
     border-radius: 10px 10px 0 0;
     font-size: 32px;
     text-transform: uppercase;
     position: relative;
+    z-index: 1;
 }
 
 h4.lab-title {
     background-color: #F5F5DC;
     color: #333;
     padding: 15px 20px;
-    margin: -20px -20px 20px -20px
+    margin: 0;
     border-radius: 10px 10px 0 0;
     font-size: 10px;
     text-transform: uppercase;
-    z-index: 1;
+    position: relative;
+    z-index:
     top: 0;
     left: 0;
 }
+
 
 @media (max-width: 600px) {
     .container {

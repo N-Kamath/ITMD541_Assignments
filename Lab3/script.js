@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const billTotalValue = billTotalInput.value.trim();
         if (billTotalValue !== '' && (isNaN(parseFloat(billTotalValue)) || parseFloat(billTotalValue) < 0)) {
             alert('Please enter a valid input for the bill total.');
+        } else {
+            alert('');
         }
         updateTipValues();
     });

@@ -1,25 +1,28 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const billTotalInput = document.getElementById('billTotal');
-    const tipPercentageInput = document.getElementById('tipPercentage');
-    const tipAmountInput = document.getElementById('tipAmount');
-    const tipRangeInput = document.getElementById('tipRange');
-    const totalWithTipInput = document.getElementById('totalWithTip');
-    const tipCalculatorForm = document.getElementById('tipCalculator');
+const billInput = document.getElementById("bill");
+const tipRange = document.getElementById("tip");
+const tipPercentOutput = document.getElementById("tip-percent");
+const tipAmountOutput = document.getElementById("tip-amount");
+const totalAmountOutput = document.getElementById("total-amount");
 
-    tipCalculatorForm.addEventListener('input', function () {
-        const billTotal = parseFloat(billTotalInput.value);
-        const tipPercentage = parseFloat(tipRangeInput.value);
-        const tipAmount = (billTotal * tipPercentage) / 100;
-        const totalWithTip = billTotal + tipAmount;
+billInput.addEventListener("input", calculateTip);
+tipRange.addEventListener("input", calculateTip);
 
-        if (!isNaN(billTotal)) {
-            tipPercentageInput.value = tipPercentage.toFixed(2);
-            tipAmountInput.value = tipAmount.toFixed(2);
-            totalWithTipInput.value = totalWithTip.toFixed(2);
-        } else {
-            tipPercentageInput.value = '';
-            tipAmountInput.value = '';
-            totalWithTipInput.value = '';
-        }
-    });
-});
+function calculateTip() {
+  const bill = parseFloat(billInput.value);
+  const tipPercent = tipRange.value;
+
+  if (isNaN(bill)) {
+    alert("Enter a valid input");
+    billInput.value = "";
+  } else {
+    const totalTip = (bill * tipPercent) / 100;
+    const total = bill + totalTip;
+
+    billInput.value = bill.toFixed(2);
+    tipPercentOutput.textContent = tipPercent + "%";
+    tipAmountOutput.textContent = totalTip.toFixed(2) + "$";
+    totalAmountOutput.textContent = total.toFixed(2) + "$";
+  }
+}
+
+calculateTip();

@@ -30,14 +30,10 @@ body {
     align-items: center;
 }
 
-form {
-    text-align: left;
-    width: 100%;
-}
-
 .form-group {
     margin-bottom: 15px;
     width: 100%;
+    flex: 1; /* Add this line to distribute vertical space evenly */
 }
 
 label {
@@ -81,16 +77,15 @@ h4.lab-title {
     left: 0;
 }
 
-
 @media (max-width: 600px) {
     .container {
         max-width: 90%;
     }
-    
+
     h1 {
         font-size: 28px;
     }
-    
+
     input {
         font-size: 14px;
     }
@@ -100,11 +95,11 @@ h4.lab-title {
     .container {
         max-width: 70%;
     }
-    
+
     h1 {
         font-size: 36px;
     }
-    
+
     input {
         font-size: 18px;
     }

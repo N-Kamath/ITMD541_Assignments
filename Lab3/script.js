@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const tipAmount = (billTotal * tipPercentage) / 100;
             const totalWithTip = billTotal + tipAmount;
 
-            tipPercentageInput.value = tipPercentage.toFixed(0);
-            tipAmountInput.value = tipAmount.toFixed(2);
-            totalWithTipInput.value = totalWithTip.toFixed(2);
+            tipPercentageInput.value = tipPercentage.toFixed(0) + "%";
+            tipAmountInput.value = "$" + tipAmount.toFixed(2);
+            totalWithTipInput.value = "$" + totalWithTip.toFixed(2);
         } else {
             tipPercentageInput.value = '';
             tipAmountInput.value = '';

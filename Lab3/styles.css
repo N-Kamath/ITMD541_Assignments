@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: conic-gradient(at 125% 50%, #f2e0b1, #e5b262, #d1925a, #bd7b6a, #8a684a);
+    background: background: conic-gradient(at 125% 50%, #355833, #3a5f3c, #3d6b44, #477856, #546d58);
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    background-color: #007049;
+    background-color: #F5F5DC;
     border: 2px solid #000000;
     border-radius: 10px;
     padding: 20px;

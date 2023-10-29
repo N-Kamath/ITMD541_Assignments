@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: conic-gradient(at 50% 50%, #355833 0%, #36a937 10%, #3a5f3c 20%, #3e6540 30%, #3d6b44 40%, #427c50 50%, #477856 60%, #4e7e5a 70%, #546d58 80%, #578a67 90%, #5b8f6a 100%);
+    background: conic-gradient(from 0deg, #000000, #0d0d29, #1f2b55, #3c4c8e, #6a8dcf, #a7c7ff, #ffffff, #a7c7ff, #6a8dcf, #3c4c8e, #1f2b55, #0d0d29, #000000);
     text-align: center;
 }
 

@@ -28,6 +28,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.black-box {
+    width: 352px;
+    height: 474px;
+    border: 1px solid #000000;
 }
 
 .form-group {
@@ -72,9 +79,7 @@ h4.lab-title {
     font-size: 16px;
     text-transform: uppercase;
     position: relative;
-    z-index:
-    top: 0;
-    left: 0;
+    z-index: 1;
 }
 
 @media (max-width: 600px) {

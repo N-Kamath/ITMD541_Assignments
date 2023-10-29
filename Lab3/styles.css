@@ -33,11 +33,11 @@ body {
 
 .black-box {
     width: 352px;
-    height: 461px;
+    height: 481px;
     border: 1px solid #000000;
     position: absolute;
     z-index: 2;
-    top: 20px;
+    top: 62px;
     border-radius: 10px;
 }
 

@@ -32,8 +32,8 @@ body {
 
 .border-wrapper {
     border: 1px solid #000000;
-    width: 400px;
-    height: 552px;
+    width: 352px;
+    height: 474px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -56,14 +56,14 @@ input {
 h1 {
     background-color: #333;
     color: #fff;
-    padding: 15px 20px;
-    margin-bottom: 15px;
+    margin: 0;
     border-radius: 10px 10px 0 0;
     font-size: 32px;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
 }
+
 
 h4.lab-title {
     background-color: #D4AF37;

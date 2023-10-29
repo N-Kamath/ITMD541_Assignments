@@ -37,7 +37,10 @@ body {
     border: 1px solid #000000;
     position: absolute;
     z-index: 2;
+    top: 10px;
+    border-radius: 10px;
 }
+
 
 .form-group {
     margin-bottom: 15px;

@@ -1,5 +1,6 @@
 // Event listener for using geolocation
 document.getElementById('geoLocation').addEventListener('click', function() {
+    resetInputs();
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
             getSunriseSunsetInfo(position.coords.latitude, position.coords.longitude);
@@ -13,10 +14,16 @@ document.getElementById('geoLocation').addEventListener('click', function() {
 
 // Event listener for selecting a predefined location
 document.getElementById('presetLocations').addEventListener('change', function() {
+    resetInputs('select');
     const coords = this.value.split(',');
     if (coords.length === 2) {
         getSunriseSunsetInfo(coords[0], coords[1]);
     }
+});
+
+// Event listener for the search location input
+document.getElementById('searchLocation').addEventListener('input', function() {
+    resetInputs('input'); // Reset other inputs
 });
 
 // Event listener for searching a location
@@ -37,6 +44,16 @@ document.getElementById('searchButton').addEventListener('click', function() {
         alert("Please enter a location to search.");
     }
 });
+
+// Function to reset other input methods
+function resetInputs(triggeredBy = '') {
+    if (triggeredBy !== 'select') {
+        document.getElementById('presetLocations').value = '';
+    }
+    if (triggeredBy !== 'input') {
+        document.getElementById('searchLocation').value = '';
+    }
+}
 
 // Function to fetch sunrise and sunset info
 function getSunriseSunsetInfo(latitude, longitude) {
@@ -100,5 +117,3 @@ function updateDisplay(dataToday, dataTomorrow) {
         <div>Timezone: ${dataTomorrow.timezone} (UTC ${formatUTCOffset(dataTomorrow.utc_offset)})</div>
     `;
 }
-
-

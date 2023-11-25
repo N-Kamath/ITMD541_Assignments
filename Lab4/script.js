@@ -117,3 +117,4 @@ function updateDisplay(dataToday, dataTomorrow) {
         <div>Timezone: ${dataTomorrow.timezone} (UTC ${formatUTCOffset(dataTomorrow.utc_offset)})</div>
     `;
 }
+
